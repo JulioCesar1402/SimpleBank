@@ -19,4 +19,4 @@ sqlc:
 test:
 	go test -v -cover ./...
 
-.PRONY: postgres createdb dropdb sqlc
+.PRONY: postgres createdb dropdb migrateup migratedown sqlc test
